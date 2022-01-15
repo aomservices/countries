@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
-import { Header } from './components/Header/Header'
+import React from 'react';
+import Homepage from './components/Homepage/Homepage.component';
 
-const App = () => {
-
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  
+const App: React.FC = () => {
   return (
     <div className="App">
-      <Header isDarkMode={isDarkMode} />
+      <Homepage />
     </div>
   );
 }
